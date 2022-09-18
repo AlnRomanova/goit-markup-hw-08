@@ -45,14 +45,16 @@
     background-color: var(--primary-white-color);
 
     @media screen and (min-width: 768px) {
-      width: 354px;
-      height: 374px; 
+      flex-basis: 354px;
+      
     }
 
     @media screen and (min-width: 1200px) {
-      width: 270px;
-      height: 260px; 
+      flex-basis: 270px;
+      
     }
+   
+  
 
 
   }
