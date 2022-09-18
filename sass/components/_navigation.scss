@@ -1,7 +1,18 @@
+
 .nav__list {
+    
     display: flex;
-    margin-left: 90px;
+    margin-left: 87px;
     gap: 50px;
+
+    @media screen and (max-width:767px) {
+      display: none; 
+    }
+    
+    @media screen and (min-width:1200px) {
+     margin-left: 92px;
+    }
+    
   }
   
   .nav__link {

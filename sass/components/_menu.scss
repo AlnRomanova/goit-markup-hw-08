@@ -1,0 +1,28 @@
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    color:var(--title-text-color);
+    transition: color var(--time) var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+    
+      &:active {
+         color: #2196f3;
+      }
+}
+
+
+.menu-icon {
+   fill: currentColor;
+}
