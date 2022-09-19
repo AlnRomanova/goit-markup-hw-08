@@ -18,6 +18,7 @@
 
     margin-bottom: 40px;
     gap: 8px;
+    row-gap: 15px;
   
 
     @media screen and (min-width:768px) { 
@@ -36,17 +37,28 @@
   }
   
 
-  .project-item {
+  .project {
     display: flex;
     flex-wrap: wrap;
     
 
+    flex-basis: 100%;
+    
+    @media screen and (min-width: 768px) { 
+      flex-basis: 354px;
+     }
+
+     @media screen and (min-width: 1200px) { 
+      flex-basis: 370px;
+     }
+
   }
   .projects {
+   
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
+    
   }
   
   .project .link {
@@ -92,7 +104,16 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
-    padding: 63px 24px;
+    padding: 77px 24px;
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
+
+    
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px 77px 24px;
+    }
   }
   
   .overlay-description {

@@ -621,17 +621,22 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .mailing-field {
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .mailing-input {
-  width: 358px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -676,7 +681,7 @@ textarea {
 }
 
 .mailing-icon {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .mailing-btn {
@@ -892,6 +897,11 @@ textarea {
 @media screen and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
   }
 }
 
@@ -1203,6 +1213,7 @@ textarea {
       flex-wrap: wrap;
   margin-bottom: 40px;
   gap: 8px;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .portfolio {
@@ -1223,12 +1234,26 @@ textarea {
   }
 }
 
-.project-item {
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+  }
 }
 
 .projects {
@@ -1285,7 +1310,17 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .overlay-description > p {
+    padding: 63px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay-description > p {
+    padding: 49px 24px 77px 24px;
+  }
 }
 
 .overlay-description {
@@ -1316,13 +1351,22 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  gap: 91px;
+  gap: 60px;
 }
 
 .footer-title {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1333,6 +1377,10 @@ textarea {
 
 .address {
   margin-top: 20px;
+}
+
+.address-item {
+  text-align: center;
 }
 
 .address-item:not(:first-child) {

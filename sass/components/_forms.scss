@@ -158,15 +158,18 @@
   
   .mailing-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   
   .mailing-field {
-    margin-right: 12px;
+   
+    margin-bottom: 20px;
+    // margin-right: 12px;
   }
   
   .mailing-input {
-    width: 358px;
+    flex-basis: 100%;
     height: 50px;
   
     padding-left: 16px;
@@ -185,7 +188,8 @@
   }
   
   .mailing-icon {
-    margin-left: 10px;
+    margin-left: 12px;
+    // margin-left: 10px;
   }
   
   .mailing-btn {
