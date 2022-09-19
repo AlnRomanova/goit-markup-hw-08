@@ -49,6 +49,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/icons-3.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -70,9 +80,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-1.jpg"
+                    src="./images/projects/img -1_sm.jpg"
                     alt="Головна сторінка веб-сайту"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -94,9 +104,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-2.jpg"
+                    src="./images/projects/img -2_sm.jpg"
                     alt="Постер з двома баскетболістами"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -118,9 +128,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-3.jpg"
+                    src="./images/projects/img -3_sm.jpg"
                     alt="Логотип та назва ресторану"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -142,9 +152,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-4.jpg"
+                    src="./images/projects/img -4_sm.jpg"
                     alt="Чорні наушники"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -166,9 +176,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-5.jpg"
+                    src="./images/projects/img-5_sm.jpg"
                     alt="Дві паперові коробки"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -190,9 +200,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-6.jpg"
+                    src="./images/projects/img -6_sm.jpg"
                     alt="Сторінка веб-сайту"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -214,9 +224,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-7.jpg"
+                    src="./images/projects/img -7_sm.jpg"
                     alt="Відкритий журнал"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -238,9 +248,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-8.jpg"
+                    src="./images/projects/img -8_sm.jpg"
                     alt="Картонний ярлик"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -262,9 +272,9 @@
                 <div class="overlay">
                   <img
                     class="picture"
-                    src="./images/project-9.jpg"
+                    src="./images/projects/img -9_sm.jpg"
                     alt="Ноутбук за яким працюють"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay-description">
@@ -360,5 +370,41 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-btn menu-toggle js-close-menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./images/icons-3.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav-item"><a href="./index.html" class="link">Студія</a></li>
+        <li class="mobile-nav-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="mobile-nav-item"><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-phone">
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-mail">
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li><a href="" class="link">Instagram</a></li>
+        <li><a href="" class="link">Twitter</a></li>
+        <li><a href="" class="link">Facebook</a></li>
+        <li><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

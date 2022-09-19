@@ -52,6 +52,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -318,6 +320,11 @@ textarea {
 }
 .btn-first:hover, .btn-first:focus {
   background-color: var(--btn-color);
+}
+@media screen and (max-width: 1199px) {
+  .btn-first {
+    padding: 10px 24px;
+  }
 }
 
 .btn {
@@ -833,16 +840,47 @@ textarea {
   margin-right: auto;
   text-align: center;
   background-color: var(--bg-color-hero);
-  padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-1_sm.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-1_sm.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-1@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-1@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-2_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-2_md.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-2@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-2@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-3_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-3_lg.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img-3@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-3@2x.jpg);
+  }
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 696px;
   margin: auto;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -850,6 +888,11 @@ textarea {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 
 .feature {
@@ -1161,12 +1204,20 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    max-width: 380px;
   }
 }
 

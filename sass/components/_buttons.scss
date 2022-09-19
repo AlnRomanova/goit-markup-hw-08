@@ -18,6 +18,10 @@
   &:focus {
     background-color: var(--btn-color);
   }
+     @media screen and (max-width:1199px) {
+      padding: 10px 24px;
+     }
+  
   }
 
   
