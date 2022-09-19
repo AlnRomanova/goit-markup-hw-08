@@ -10,25 +10,52 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     
     align-items: baseline;
     gap: 60px;
-    // gap: 91px;
+
+
+    @media screen and (min-width:768px) {
+      gap: 165px;
+      row-gap: 60px;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 91px;
+    }
+
+   
   }
 
-   .footer-logo {
-      
-   }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+   
+    
+    @media screen and (min-width: 1200px) {
+      display: block;
+      font-size: 26px;
+    }
 
+  }
+  
   .footer-title {
     text-align: center;
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+
+    }
   }
   
   .address {
@@ -37,6 +64,10 @@
 
   .address-item {
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   
   .address-item:not(:first-child)  {
