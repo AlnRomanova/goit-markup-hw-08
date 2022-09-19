@@ -1131,14 +1131,16 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__list {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients__list {
+    max-width: 210px;
   }
 }
 
