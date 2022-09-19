@@ -25,7 +25,7 @@
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  flex-basis: 405px;
   min-height: 581px;
 
   padding: 40px 40px;
@@ -62,4 +62,9 @@
 &:hover {
   fill: var(--accent-color);
 }
+
+}
+
+.modal-icon:active {
+    fill: var(--accent-color);
 }

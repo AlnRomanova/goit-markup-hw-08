@@ -42,6 +42,16 @@
     cursor: pointer;
   
     transition: border var(--time) var(--timing-function);
+
+    @media screen and (min-width:1200px) {
+      min-width: 448px;
+      
+    }
+
+    @media screen and (max-width:1199px) {
+      min-width: 370px;
+      
+    }
   }
   
   .form-icon {
@@ -103,6 +113,11 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     user-select: none;
+
+    @media screen and (max-width:1199px) {
+      font-size: 12px;
+      
+    }
   }
   
   .form-agreement-link {
@@ -166,9 +181,6 @@
  
     }
 
-
-
-    
   }
   
   .mailing-field {
