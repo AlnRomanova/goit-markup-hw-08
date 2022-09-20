@@ -75,7 +75,6 @@ textarea {
   max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid blueviolet;
 }
 @media screen and (min-width: 768px) {
   .container {
