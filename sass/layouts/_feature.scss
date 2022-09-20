@@ -7,6 +7,7 @@
     
   }
 }
+
 .feature__list {
     display: flex;
     flex-wrap: wrap;
@@ -15,12 +16,11 @@
   
   .feature__item {
   
-    
     @media screen and (min-width: 768px) {
       flex-basis: 354px;
       
     }
-
+    
     @media screen and (min-width: 1200px) {
       flex-basis: 270px;
       

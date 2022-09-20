@@ -32,12 +32,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    margin-bottom: 20px;
    
     
     @media screen and (min-width: 1200px) {
       display: block;
-      font-size: 26px;
     }
 
   }
@@ -58,21 +57,22 @@
     }
   }
   
-  .address {
-    margin-top: 20px;
-  }
+  
 
   .address-item {
+    margin-bottom: 8px;
     text-align: center;
 
     @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
       text-align: left;
     }
   }
-  
-  .address-item:not(:first-child)  {
-    margin-top: 9px;
-  }
+
+   .address-phone {
+    margin-bottom: -8px;
+   }
+ 
   
   .address-link {
     font-size: 14px;

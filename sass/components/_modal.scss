@@ -59,12 +59,12 @@
 
   transition: fill var(--time) var(--timing-function);
 
-&:hover {
+  &:hover {
   fill: var(--accent-color);
 }
 
 }
 
-.modal-icon:active {
+  .modal-icon:active {
     fill: var(--accent-color);
 }
