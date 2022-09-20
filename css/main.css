@@ -1220,6 +1220,13 @@ textarea {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .clients__item {
   -ms-flex-preferred-size: 210px;
