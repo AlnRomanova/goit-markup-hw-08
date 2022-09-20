@@ -147,9 +147,6 @@ textarea {
 .nav__link--current {
   color: var(--accent-color);
 }
-.nav__link--current::after {
-  opacity: 1;
-}
 
 .nav__link::after {
   content: "";
@@ -165,7 +162,10 @@ textarea {
   -webkit-transition: opacity var(--time) var(--timing-function);
   transition: opacity var(--time) var(--timing-function);
 }
-.nav__link::after:hover::after, .nav__link::after:focus::after {
+
+.nav__link:hover::after,
+.nav__link:focus::after,
+.nav__link--current::after {
   opacity: 1;
 }
 
