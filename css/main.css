@@ -670,6 +670,16 @@ textarea {
   border-radius: 4px;
   background-color: transparent;
 }
+@media screen and (max-width: 1199px) {
+  .mailing-input {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    min-width: 358px;
+  }
+}
 
 .mailing-input::-webkit-input-placeholder {
   font-size: 16px;
